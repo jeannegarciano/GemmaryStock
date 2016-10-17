@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/relativelayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="#881430">
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/startdateOnStock"
+            android:hint="Start date"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:layout_marginLeft="150dp"
+            android:textAlignment="center"/>
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/enddateOnStock"
+            android:hint="End date"
+            android:layout_toRightOf="@+id/startdateOnStock"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textAlignment="center"/>
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/branchIdOnStock"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Choose branch"
+            android:layout_below="@+id/startdateOnStock"
+
+            android:textSize="25dp"
+            android:layout_marginLeft="150dp"
+            android:textAlignment="center"/>
+        <com.github.mikephil.charting.charts.HorizontalBarChart
+            android:id="@+id/chartSalesOnStock"
+            android:layout_width="900dp"
+            android:layout_height="450dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/branchIdOnStock"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativelayout2"
+        android:gravity="left"
+        android:paddingLeft="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Items On Stock"
+            android:textSize="28dp"
+            android:id="@+id/textView1OnStock"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Ring"
+            android:textSize="20dp"
+            android:id="@+id/ringOnStock"
+            android:layout_below="@+id/textView1OnStock"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Earrings"
+            android:textSize="20dp"
+            android:id="@+id/earringOnStock"
+            android:layout_below="@+id/ringOnStock"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Necklace"
+            android:textSize="20dp"
+            android:id="@+id/necklaceOnStock"
+            android:layout_below="@+id/earringOnStock"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Bracelet"
+            android:textSize="20dp"
+            android:id="@+id/braceletOnStock"
+            android:layout_below="@+id/necklaceOnStock"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Value"
+            android:textSize="20dp"
+            android:id="@+id/ringsalesOnStock"
+            android:layout_toRightOf="@+id/textView1OnStock"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="260dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Value"
+            android:textSize="20dp"
+            android:id="@+id/earringsalesOnStock"
+            android:layout_toRightOf="@+id/textView1OnStock"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="260dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Value"
+            android:textSize="20dp"
+            android:id="@+id/necklacesalesOnStock"
+            android:layout_toRightOf="@+id/textView1OnStock"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="260dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Value"
+            android:textSize="20dp"
+            android:id="@+id/braceletsalesOnStock"
+            android:layout_toRightOf="@+id/textView1OnStock"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="260dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>
+

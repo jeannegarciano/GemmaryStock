@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/start"
+        android:gravity="center"
+        android:background="#881430">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/startdate"
+            android:hint="Start date"
+            android:textColor="#FFFFFF"
+            android:textColorHint="@color/white"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/enddate"
+            android:hint="End date"
+            android:layout_toEndOf="@+id/startdate"
+            android:layout_toRightOf="@+id/startdate"
+            android:textColor="#FFFFFF"
+            android:textColorHint="@color/white"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#881430"
+        android:theme="@style/AppTheme">
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/branchId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Choose branch"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+       />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#881430">
+    <com.github.mikephil.charting.charts.HorizontalBarChart
+        android:id="@+id/chartSales"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Most Sold Items"
+        android:id="@+id/textView1"
+        android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ring"
+        android:id="@+id/ring"
+        android:layout_marginBottom="5dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Earrings"
+        android:id="@+id/earring"
+        android:layout_below="@+id/ring"
+        android:layout_marginBottom="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Necklace"
+        android:id="@+id/necklace"
+        android:layout_below="@+id/earring"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Bracelet"
+        android:id="@+id/bracelet"
+        android:layout_below="@+id/necklace"
+        android:layout_marginBottom="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Value"
+        android:id="@+id/ringsales"
+        android:layout_marginLeft="260dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Value"
+        android:id="@+id/earringsales"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="260dp"
+        android:layout_below="@+id/ringsales"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Value"
+        android:id="@+id/necklacesales"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="260dp"
+        android:layout_below="@id/earringsales"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Value"
+        android:textSize="20dp"
+        android:id="@+id/braceletsales"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="260dp"
+        android:layout_below="@+id/necklacesales"/>
+</RelativeLayout>
+</LinearLayout>

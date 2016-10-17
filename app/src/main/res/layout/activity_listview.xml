@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Abegail Gilda"
+        android:textStyle="bold"
+        android:id="@+id/name"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:text="Juan De Cruz"
+        android:id="@+id/rf"
+        android:layout_gravity="center_horizontal"
+        android:layout_toRightOf="@+id/requestedFrom"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Requested From:"
+        android:id="@+id/requestedFrom"
+        android:layout_below="@+id/name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:text="0123456789"
+        android:id="@+id/rn"
+        android:layout_gravity="center_horizontal"
+        android:layout_toRightOf="@+id/referenceNo"
+        android:layout_below="@+id/requestedFrom"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Reference No:"
+        android:id="@+id/referenceNo"
+        android:layout_below="@+id/requestedFrom"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Date Requested:"
+        android:id="@+id/dareRequested"
+        android:layout_below="@+id/referenceNo"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:text="July 15, 2016"
+        android:id="@+id/dr"
+        android:layout_gravity="center_horizontal"
+        android:layout_toRightOf="@+id/dareRequested"
+        android:layout_below="@+id/referenceNo"
+        android:layout_marginLeft="10dp"/>
+</RelativeLayout>

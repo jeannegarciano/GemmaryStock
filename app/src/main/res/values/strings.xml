@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Stocks</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_branch">Head branch</string>
+    <string name="branch_">Head branch</string>
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_itemon_stock">ItemonStock</string>
+
+    <string-array name="branches">
+        <item>Capitol</item>
+        <item>HEADOFFICE</item>
+        <item>JHANANOISDASD</item>
+        <item>HIJK</item>
+        <item>CXVCXV</item>
+        <item>DF</item>
+        <item>OSMENA</item>
+    </string-array>
+</resources>

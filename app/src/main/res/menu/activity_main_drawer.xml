@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Reports"
+        android:icon="@drawable/report"
+        android:id="@+id/nav_reports">
+
+    </item>
+    <group android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/nav_sales"
+            android:icon="@drawable/bullet"
+            android:title="Generate Sales Report"
+            android:textSize="20sp"/>
+        <item
+            android:id="@+id/nav_item"
+            android:icon="@drawable/bullet"
+            android:title="Item on Stock"
+            android:textSize="20sp"/>
+        <item
+            android:id="@+id/nav_return"
+            android:icon="@drawable/bullet"
+            android:title="Summary of Return Items"
+            android:textSize="20sp"/>
+        <item
+            android:id="@+id/nav_returnItems"
+            android:icon="@drawable/bullet"
+            android:title="Summary of Return Items from Customer"
+            android:textSize="20sp"/>
+        <item
+            android:id="@+id/nav_pullout"
+            android:icon="@drawable/bullet"
+            android:title="Pull out Items"
+            android:textSize="20sp"/>
+        <item
+            android:id="@+id/nav_layaway"
+            android:icon="@drawable/bullet"
+            android:title="Lay Away"
+            android:textSize="20sp"/>
+
+    </group>
+
+
+    <item android:title="For Approval"
+        android:icon="@drawable/stamp"
+        android:id="@+id/nav_approval">
+
+    </item>
+
+</menu>
